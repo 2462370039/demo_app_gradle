@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "demo_app_gradle"
 include ':app'
+include ':network'
+include ':list'
