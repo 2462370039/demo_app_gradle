@@ -2,6 +2,7 @@ package com.team8.demo_app_gradle;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Toast;
 
@@ -9,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 
 import com.team8.demo_app_gradle.databinding.ActivityMainBinding;
+import com.team8.demo_app_gradle.test.LiveDataActivity;
 
 public class MainViewModel extends AndroidViewModel {
     private  static ActivityMainBinding binding;
@@ -26,6 +28,10 @@ public class MainViewModel extends AndroidViewModel {
     }
 
     public static void click(View view){
+        //点击事件
         Toast.makeText(mainActivity, "你点击了按钮", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent();
+        intent.setClass(mainActivity, LiveDataActivity.class);
+        mainActivity.startActivity(intent);
     }
 }
