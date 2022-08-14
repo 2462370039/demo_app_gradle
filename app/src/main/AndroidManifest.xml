@@ -14,7 +14,7 @@
         android:theme="@style/DayNight"
         tools:targetApi="31">
         <activity
-            android:name=".MainUiActivity"
+            android:name=".ui.MainUiActivity"
             android:exported="false" />
         <activity
             android:name=".test.LiveDataActivity"
