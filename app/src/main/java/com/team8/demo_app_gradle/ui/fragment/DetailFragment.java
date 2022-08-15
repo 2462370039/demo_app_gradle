@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.team8.demo_app_gradle.R;
 
@@ -79,5 +80,19 @@ public class DetailFragment extends Fragment {
                 controller.navigate(R.id.action_detailFragment_to_homeFragment);
             }
         });
+
+
+        if (getArguments() != null) {
+            //获取fragment传递的数据
+            String text = getArguments().getString("arg1");
+            //获取输入框中传递过来的数据
+            String string = getArguments().getString("my_name");
+
+            //将获取到的数据设置到TextView下
+            TextView textView = getView().findViewById(R.id.textView3);
+            //textView.setText(text);
+            textView.setText(string);
+        }
+
     }
 }
