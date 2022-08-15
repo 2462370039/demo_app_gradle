@@ -11,6 +11,7 @@ import androidx.lifecycle.AndroidViewModel;
 
 import com.team8.demo_app_gradle.databinding.ActivityMainBinding;
 import com.team8.demo_app_gradle.list.List_options_activity;
+import com.team8.demo_app_gradle.nav_vm.NavVmMainActivity;
 import com.team8.demo_app_gradle.test.LiveDataActivity;
 import com.team8.demo_app_gradle.ui.MainUiActivity;
 
@@ -42,6 +43,14 @@ public class MainViewModel extends AndroidViewModel {
         Toast.makeText(mainActivity,"你点击了按钮2", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent();
         intent.setClass(mainActivity, MainUiActivity.class);
+        mainActivity.startActivity(intent);
+    }
+
+    public static void click_goToNavViewModelTest(View view){
+        //进行Navigation_ViewModel测试
+        Toast.makeText(mainActivity, "进行Nav_VM测试", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent();
+        intent.setClass(mainActivity, NavVmMainActivity.class);
         mainActivity.startActivity(intent);
     }
 }

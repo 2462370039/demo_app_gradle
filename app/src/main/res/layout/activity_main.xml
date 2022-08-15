@@ -33,6 +33,13 @@
             android:layout_height="75dp"
             android:onClick="@{vm::click_goToNavigation}"
             android:text="@string/navigation_activity" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="196dp"
+            android:onClick="@{vm::click_goToNavViewModelTest}"
+            android:layout_height="75dp"
+            android:text="@string/nav_vm"/>
     </LinearLayout>
 
 </layout>

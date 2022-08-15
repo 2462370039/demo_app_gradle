@@ -19,4 +19,9 @@
     <string name="detailFra">Detail</string>
     <string name="Button_H_To_D">Go To Detail</string>
     <string name="button_D_To_H">GO TO Home</string>
+    <string name="nav_vm">Nav_ViewModel测试</string>
+    <string name="goin">进入</string>
+    <string name="goout">退出</string>
+    <string name="sub">-</string>
+    <string name="add">+</string>
 </resources>
