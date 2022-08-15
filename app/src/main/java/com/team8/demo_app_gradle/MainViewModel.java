@@ -10,7 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 
 import com.team8.demo_app_gradle.databinding.ActivityMainBinding;
+import com.team8.demo_app_gradle.list.List_options_activity;
 import com.team8.demo_app_gradle.test.LiveDataActivity;
+import com.team8.demo_app_gradle.ui.MainUiActivity;
 
 public class MainViewModel extends AndroidViewModel {
     private  static ActivityMainBinding binding;
@@ -32,6 +34,14 @@ public class MainViewModel extends AndroidViewModel {
         Toast.makeText(mainActivity, "你点击了按钮", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent();
         intent.setClass(mainActivity, LiveDataActivity.class);
+        mainActivity.startActivity(intent);
+    }
+
+    public static void click_goToNavigation(View view){
+        //点击进入事件2
+        Toast.makeText(mainActivity,"你点击了按钮2", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent();
+        intent.setClass(mainActivity, MainUiActivity.class);
         mainActivity.startActivity(intent);
     }
 }

@@ -13,20 +13,26 @@
         android:gravity="center">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="174dp"
+            android:layout_height="42dp"
             android:text="Hello World!"
+            android:textAlignment="center"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="196dp"
+            android:text="@string/livedata_activity"
             android:onClick="@{vm::click}"
-            android:layout_height="wrap_content"/>
+            android:layout_height="75dp"/>
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="196dp"
+            android:layout_height="75dp"
+            android:onClick="@{vm::click_goToNavigation}"
+            android:text="@string/navigation_activity" />
     </LinearLayout>
 
 </layout>
